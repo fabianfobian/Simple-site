@@ -3,13 +3,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    /* 1. Set the image path */
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_640.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 0px 0;
     text-align: center;
+    margin-bottom: 0%;
 }
 
 h1 {
@@ -27,27 +34,43 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    display: block;
+    z-index: 1000;
+    visibility: visible;
+    transition: transform 3.00s ease-in-out;
+    /* transform-style: preserve-3d; */
 }
-nav ul {
-  list-style: none; /* Gets rid of the bullet points */
-  padding: 0;      /* Removes default inner spacing */
-  margin: 0;       /* Removes default outer spacing */
-
-  /* --- The Key Rule --- */
-  display: flex;     
-  /* This turns the <li> items into flexible children in a row */
-
-  /* Optional: Controls spacing between items */
-  justify-content: space-around; 
-  /* or justify-content: flex-start; */ 
-  /* or justify-content: center; */
+.hidden-footer {
+    display: none;
+    transform: translateY(100%);
 }
 
-/* 2. Style the individual list items (optional, but often needed) */
-nav li {
-  /* This is usually left as default, but you might add margin/padding here */
-  margin: 0 10px; 
+#nav{
+    list-style: none; 
+    padding: 0;      
+    margin: 0 0 0 0; /* Add a little margin below the list */
+    display: flex;     
+    justify-content: center; /* Centering the nav links */
+}
+#nav li {
+    margin: 0 15px; 
+}
+
+#nav a {
+    color: #ffffff;
+    text-decoration: none; /* Remove underline from links */
+    text-transform: uppercase;
+}
+
+#nav a:hover {
+    color: #ccc; /* Simple hover effect */
+}
+
+nav {
+    text-size-adjust: auto;
+    font-size: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

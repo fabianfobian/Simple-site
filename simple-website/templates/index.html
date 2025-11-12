@@ -10,22 +10,24 @@
     <header>
         <h1>Fabian Fobian, a passionate web developer</h1>
     </header>
-    <aside>
-        <nav>
+    <nav style="background: gray; padding-top:0%; margin-top:0px;">
             <ul id="nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="footer-toggle" style="margin: 10px 0 0 10%; padding: 5px;">
+    Toggle Footer Visibility
+</button></li>
             </ul>
-        </nav>
-    </aside>
+    </nav>
+    
     <section>
         <h2>Welcome to My Simple Website</h2>
     </section>
-    <main>
+    <main class="container">
         <p>This is a basic website built with HTML, CSS, JavaScript, and Python.</p>
     </main>
-    <footer>
+    <footer class="hidden-footer">
         <p>&copy; 2025 Javinsa</p>
     </footer>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
