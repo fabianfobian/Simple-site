@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Fabian Fobian, a passionate web developer</h1>
+    </header>
+    <aside>
+        <nav>
+            <ul id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section>
+        <h2>Welcome to My Simple Website</h2>
+    </section>
+    <main>
+        <p>This is a basic website built with HTML, CSS, JavaScript, and Python.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Javinsa</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

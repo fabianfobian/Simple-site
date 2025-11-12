@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+nav ul {
+  list-style: none; /* Gets rid of the bullet points */
+  padding: 0;      /* Removes default inner spacing */
+  margin: 0;       /* Removes default outer spacing */
+
+  /* --- The Key Rule --- */
+  display: flex;     
+  /* This turns the <li> items into flexible children in a row */
+
+  /* Optional: Controls spacing between items */
+  justify-content: space-around; 
+  /* or justify-content: flex-start; */ 
+  /* or justify-content: center; */
+}
+
+/* 2. Style the individual list items (optional, but often needed) */
+nav li {
+  /* This is usually left as default, but you might add margin/padding here */
+  margin: 0 10px; 
+}
